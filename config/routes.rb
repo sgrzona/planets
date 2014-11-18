@@ -1,6 +1,20 @@
 Rails.application.routes.draw do
+  resources :planets
+
   root "pages#home"
+  
   get "contact" => "pages#contact"
+  get "mercury" => "pages#mercury"
+  get "venus"   => "pages#venus"
+  get "earth"   => "pages#earth"
+  get "mars"    => "pages#mars"
+  get "jupiter" => "pages#jupiter"
+  get "saturn"  => "pages#saturn"
+  get "uranus"  => "pages#uranus"
+  get "neptune" => "pages#neptune"
+  get "pluto"   => "pages#pluto"
+  
+  
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
